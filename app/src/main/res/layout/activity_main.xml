@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="272dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logoautoseller" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nombreusuarioconectarlayaout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/hint"
+        app:endIconMode="clear_text"
+        app:helperText="@string/campoobligatorio"
+        app:helperTextTextColor="@color/hint"
+        app:startIconDrawable="@drawable/baseline_person_2_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombreusuarioconectar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:hint="introduce nombre de usuario"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contraseñaconectarlayaout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:textColorHint="@color/hint"
+        app:endIconMode="password_toggle"
+        app:helperText="@string/campoobligatorio"
+        app:helperTextTextColor="@color/hint"
+        app:startIconDrawable="@drawable/baseline_password_24">
+
+        <EditText
+            android:id="@+id/contraseñaconectar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonConectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:backgroundTint="@color/botones"
+        android:text="Inicio de sesion"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/buttonRegistrarse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:backgroundTint="@color/botones"
+        android:text="Registro"
+        android:textColor="@color/white" />
+
+</LinearLayout>

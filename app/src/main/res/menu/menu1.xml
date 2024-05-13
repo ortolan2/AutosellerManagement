@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/cambio" android:id="@+id/seleccion1" />
+    <item android:title="Informacion y guia de usuario" android:id="@+id/seleccion2" />
+    <item android:title="Contacta con nosotros" android:id="@+id/seleccion4"/>
+    <item android:title="Cerrar sesion" android:id="@+id/seleccion3" />
+</menu>
